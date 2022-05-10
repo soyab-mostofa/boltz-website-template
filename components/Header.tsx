@@ -15,7 +15,7 @@ const NavItems = [
   { name: "Features", lk: "features" },
 ];
 
-const renderNavItems = (item: { name: string; lk: string }, i) => {
+const renderNavItems = (item: { name: string; lk: string }, i: number) => {
   return (
     <Link key={i} href={item.lk}>
       <a className="text-sm text-neutral-50">{item.name}</a>
